@@ -1,8 +1,4 @@
 from django.shortcuts import render
-from csv import reader
-import os
-
-from core.settings import BASE_DIR
 
 # Create your views here.
 def home(request):
