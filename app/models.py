@@ -2,8 +2,9 @@ from django.db import models
 
 # Create your models here.
 class Empresa(models.Model):
-    rnc = models.CharField(max_length=9, primary_key=True, unique=True)
-    
+    rnc = models.CharField(max_length=9, primary_key=True)
+    numero_cuenta = models.CharField(max_length=11)
+    fecha = models.CharField(max_length=15, null=True)
     def __str__(self):
         return self.rnc
 
