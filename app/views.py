@@ -8,9 +8,8 @@ from core.settings import BASE_DIR
 def home(request):
     if request.method == "POST":
         
-        file = request.POST['file']
-        
-        print (file)
+        file = request.FILES['file']
+        print (file.read())
         
     return render(request, 'app/home.html')
 
